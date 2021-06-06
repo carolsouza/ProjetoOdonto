@@ -1,0 +1,182 @@
+/*---inicio global css---*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EEEEEE;
+}
+
+:root {
+    --cinza-escuro: #888888;
+    --vermelho-usc: #ef1d26;
+    --branco: #FFFF;
+    --cinza-claro: #EEEEEE;
+    --branco-area: #e4e4e4;
+    --branco-item: #fdfdfd;
+    --preto: #000000;
+    --preto-cinza: #5c5c5c;
+}
+
+.header{
+    background-color: var(--branco);
+    border-bottom: 1px solid var(--cinza-claro);
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.area{
+    border: 1px solid var(--cinza-claro);
+    box-shadow: 5px 5px 10px var(--cinza-escuro);
+}
+
+textarea{
+    resize: none;
+}
+/*---fim global css---*/
+
+.area-forms{
+    padding: 30px 60px;
+    background-color: var(--branco);
+}
+
+.area-forms .row, .area-pac-prontuario .row{
+    margin-top: 15px;
+}
+
+.area-pac-prontuario{
+    width: 70%;
+    padding: 30px;
+    background-color: var(--branco-area);
+}
+
+iframe{
+    width: 100%;
+    height: 70vh;
+}
+
+/*----começo exclusivo ficha----*/
+.lb{
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+
+.area-forms h4, .area-forms h5{
+    margin-top: 30px;
+}
+
+.q-pediatrico{
+    border: 1px solid var(--cinza-escuro);
+    padding: 10px;
+}
+/*----fim exclusivo ficha----*/
+
+/*----começo exclusivo home----*/
+
+.area-home{
+    padding: 10px;
+    background-color: var(--branco-area);
+}
+
+.area-home .btn a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.tam-coluna{
+    width: 700px;
+}
+
+.search input[type=text]{
+    width: 80vw;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 1;
+    outline-color: var(--vermelho-usc);
+}
+
+.search button{
+    display: inline;
+}
+
+.search input{
+    margin-left: 10px;
+}
+
+/*--Botões de cadastrar paciente--*/
+
+.button-cad{
+    width: 150px;
+    margin-right: 20px;
+}
+
+.cadastrar{
+    position: absolute;
+    display: none;
+}
+.cadastrar a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 3.7em;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px var(--cinza-escuro);
+    border-radius: 50%;
+    background-color: green;
+    position: fixed;
+    right:10px;
+    bottom: 10px;
+}
+
+/*--Medias query--*/
+
+@media (max-width: 1300px){
+    .button-cad{
+        width: 100px;
+    }
+    .tam-coluna{
+        width: 500px;
+    }
+}
+
+@media (max-width: 1000px){
+    .tam-coluna{
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 770px){
+    .cadastrar{
+        display:block;
+    }
+    .button-cad{
+        display: none;
+    }
+    .prontuarios{
+        height: 80px;
+    }
+    .tam-coluna{
+        width: 200px;
+    }
+}
+
+@media (max-width: 390px){
+    .prontuarios{
+        height: 150px;
+    }
+}
+
+
+

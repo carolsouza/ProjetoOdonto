@@ -1,0 +1,9 @@
+{
+    "name": "projeto/odonto",
+    "autoload":{
+        "psr-4":{
+            "App\\":"app/"
+        }
+
+    }
+}
